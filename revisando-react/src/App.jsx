@@ -1,15 +1,17 @@
-import Lista from "./components/Lista/Lista"
-
+import { useState } from "react";
+import SeuNome from "./components/SeuNome/SeuNome";
+import Saudacao from "./components/Saudacao/Saudacao";
 
 function App() {
-  const minhaLista = ["React","Javascript","CSS","Java"]
+  
+  const [nome, setNome] = useState()
 
   return (
 
     <>
-     <h1>Rederização de listas</h1>
-     <Lista itens={minhaLista} />
-     <Lista itens={[]} />
+     <h1>State lift</h1>
+     <SeuNome setNome={setNome} />
+     <Saudacao nome={nome} />
     </>
   )
 }
