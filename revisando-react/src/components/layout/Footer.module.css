@@ -1,0 +1,16 @@
+.list_estilo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.list_estilo li{
+    margin: 0 1em;
+}
+
+.list_estilo svg{
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #1cc746;
+}
